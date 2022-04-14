@@ -63,8 +63,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/harshpreets63/Mirror-Bot")
-    buttons.buildbutton("Channel", "https://t.me/HarshMirror")
+    buttons.buildbutton("Repo", "https://github.com/MMETMA/Mirror-Bot")
+    buttons.buildbutton("Owner", "https://t.me/MMETMA")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -173,7 +173,7 @@ def bot_help(update, context):
 /{BotCommands.UnzipMirrorCommand} [download_url][magnet_link]: Starts mirroring and if downloaded file is any archive, extracts it to Google Drive.
 '''
     help = telegraph.create_page(
-            title='Harsh Mirror Help',
+            title='MMETMA Mirror Help',
             content=help_string_telegraph,
         )["path"]
     buttons = button_build.ButtonMaker()
