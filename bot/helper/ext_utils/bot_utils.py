@@ -148,8 +148,8 @@ def get_readable_message():
                             f" | <b>Leechers:</b> {download.torrent_info().num_leechs}"
                     except:
                         pass
-                msg += f''
-                msg += f"\n\n<b>⛔ To Stop:</b> <code>/{BotCommands.CancelMirror} {download.gid()}</code>"
+                msg += f'\n\n<b>👤 User:</b> {download.message.from_user.first_name} ➡️<code>{download.message.from_user.id}</code>'
+                msg += f"\n<b>⛔ To Stop:</b> <code>/{BotCommands.CancelMirror} {download.gid()}</code>"
             msg += "\n\n"
         return msg    
 
